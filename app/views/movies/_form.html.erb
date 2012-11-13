@@ -1,11 +1,11 @@
 <%= simple_form_for @movie, :html => { :class => 'form-horizontal' } do |f| %>
-  <%= f.input :tytul %>
-  <%= f.input :rezyser %>
-  <%= f.input :gatunek %>
-  <%= f.input :dlugosc %>
+  <%= f.input :tytul, :input_html => { :class => "span4", :rows => 1 } %>
+  <%= f.input :rezyser, :input_html => { :class => "span4" } %>
+  <%= f.input :gatunek, :input_html => { :class => "span4" } %>
+  <%= f.input :dlugosc, :label => "Dlugosc (w minutach)" %>
   <%= f.input :ocena_filmweb %>
   <%= f.input :ocena_imdb %>
-  <%= f.input :moja_ocena %>
+  <%= f.input :moja_ocena, :collection => 0..10  %>
   <div class="form-actions">
     <%= f.button :submit, :class => 'btn-primary' %>
     <%= link_to t('.cancel', :default => t("helpers.links.cancel")),

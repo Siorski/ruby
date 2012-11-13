@@ -5,9 +5,9 @@ class CreateMovies < ActiveRecord::Migration
       t.string :rezyser
       t.string :gatunek
       t.integer :dlugosc
-      t.decimal :ocena_filmweb
-      t.decimal :ocena_imdb
-      t.decimal :moja_ocena
+      t.float :ocena_filmweb
+      t.float :ocena_imdb
+      t.integer :moja_ocena
 
       t.timestamps
     end

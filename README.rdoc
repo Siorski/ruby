@@ -1,1 +1,1 @@
-Projekt aplikacji w ruby.
+Projekt aplikacji napisnej w ruby.

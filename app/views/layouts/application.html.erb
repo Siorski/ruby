@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title><%= content_for?(:title) ? yield(:title) : "Filmy" %></title>
     <%= csrf_meta_tags %>
     <%= stylesheet_link_tag "application", :media => "all" %>
@@ -13,14 +13,9 @@
     <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
-          <a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <a class="brand" href="#">Filmy</a>
           <div class="container nav-collapse">
             <ul class="nav">
+			  <a class="brand" href="/">Strona główna</a>
               <li><%= link_to "Filmweb", "http://www.filmweb.pl"  %></li>
               <li><%= link_to "IMDb", "http://www.imdb.com"  %></li>
             </ul>
@@ -28,14 +23,14 @@
         </div>
       </div>
     </div>
-
+ 
     <div class="container">
         <div class="row">
           <div class="span12">
-             <%= yield %>
+             <%= yield %> 	
           </div>
         </div><!--/row-->
-
+						
       <footer>
         <p>&reg; Siorski 2012</p>
       </footer>
