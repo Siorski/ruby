@@ -13,6 +13,26 @@
  *= require_tree .
  */
 
-body { margin-top: 50px; }
+body { 
+	margin-top: 50px; 
+	background-color: red;
+}
 
+#authentication {
+  width: 10%;
+  margin-left: 1130px;
+  padding: 20px 40px;
+  text-align: right;
+  background-color: #B52121;
+  -webkit-border-radius: 5px; /* Safari, Chrome */
+  -khtml-border-radius: 5px; /* Konqueror */
+  -moz-border-radius: 5px; /* Firefox */
+  border-radius: 10px;
+}
 
+#container {
+  width: 60%;
+  margin: 0 auto;
+  background-color: #FFF;
+  padding: 20px 40px;
+}

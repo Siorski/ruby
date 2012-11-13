@@ -6,6 +6,7 @@ gem 'json', '~> 1.7.5'
 gem 'simple_form', '~> 2.0.4'
 
 gem 'sqlite3', '~> 1.3.6',  :groups => [:test, :development]
+gem 'bcrypt-ruby', :require => 'bcrypt'
 gem 'pg', '~> 0.14.1',      :groups => :production
 
 # Using Capybara with RSpec:
