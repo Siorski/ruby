@@ -1,6 +1,10 @@
 Filmy::Application.routes.draw do
+  get "sessions/new"
+
   resources :movies
 
+  match "/auth/:provider/callback" => "sessions#create"
+  match "/signout" => "sessions#destroy", :as => :signout
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -57,14 +61,8 @@ Filmy::Application.routes.draw do
   # This is a legacy wild controller route that's not recommended for RESTful applications.
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id))(.:format)'
- 
-  get "login"    => "sessions#new", :as => "login"	
-  get "register" => "users#new",    :as => "register"
-  get "logout"   => "sessions#destroy", :as => "logout"
   
   #root :to => "users#new"  # to trzeba będzie zmienić
   root :to => "movies#index"
-  resources :users
-  resources :sessions
 	
 end

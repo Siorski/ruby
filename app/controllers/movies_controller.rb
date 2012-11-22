@@ -2,7 +2,13 @@ class MoviesController < ApplicationController
   # GET /movies
   # GET /movies.json
   def index
+   # @movies = Movie.all
+
+  if params[:tytul]
+    @movies = Movie.search(params[:tytul])
+  else
     @movies = Movie.all
+  end
 
     respond_to do |format|
       format.html # index.html.erb

@@ -28,5 +28,8 @@ group :development, :test do
   gem 'rspec-rails', '~> 2.11.0'
 end
 
+
+gem 'omniauth-twitter'
+
 # alternatywa dla serwera Webrick
 gem 'thin'

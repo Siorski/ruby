@@ -10,16 +10,23 @@
   </head>
   <body>
 
-	<nav id="authentication">
+	<div id="user_nav">
 		<% if current_user %>
-			Welcome <%= current_user.email %>! </br>
-		<%= link_to "Log out", logout_path %>
-			<% else %>
-				<%= link_to "Register", register_path %> or
-				<%= link_to "Log in", login_path %>
+			Welcome <%= current_user.name %>!
+			<%= link_to "Wyloguj", signout_path %>
+		<% else %>
+			<%= link_to "Zaloguj się za pomocą Twittera", "/auth/twitter"  %>
 		<% end %>
-	</nav>
-
+	</div>
+	
+	<div id="szukajka"> 
+	Wyszukaj tytuł: <br />
+	<%= form_tag movies_path, :method =>'get',id: "movies_search", class: "form-inline"  do %>
+		<%= text_field_tag :tytul, params[:tytul] %>
+		<%= submit_tag "Szukaj", :name => nil %>
+	<% end %>
+	</div>
+	
     <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">

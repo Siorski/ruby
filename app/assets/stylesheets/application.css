@@ -18,9 +18,11 @@ body {
 	background-color: red;
 }
 
-#authentication {
+#user_nav {
   width: 15%;
   margin-left: 1130px;
+  font-size: 15px;
+  color: #2D2AC1;
   padding: 20px 40px;
   text-align: right;
   background-color: #B52121;
@@ -30,9 +32,12 @@ body {
   border-radius: 10px;
 }
 
+
 #container {
   width: 60%;
   margin: 0 auto;
   background-color: #FFF;
   padding: 20px 40px;
 }
+
+
