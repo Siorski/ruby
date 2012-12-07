@@ -3,7 +3,13 @@
   <h1><%=t '.title', :default => model_class.model_name.human.pluralize %></h1>
 </div>
 
-
+<div class="szukajka"> 
+	Wyszukaj tytuł: <br />
+	<%= form_tag movies_path, :method =>'get',id: "movies_search", class: "form-inline"  do %>
+		<%= text_field_tag :tytul, params[:tytul] %>
+		<%= submit_tag "Szukaj", :name => nil %>
+	<% end %>
+</div>
 
 <table class="table table-striped">
   <thead>
