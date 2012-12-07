@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -54,3 +55,61 @@
 
   </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title><%= content_for?(:title) ? yield(:title) : "Filmy" %></title>
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag "application", :media => "all" %>
+  </head>
+  <body>
+	
+	
+	<div id="user_nav">
+		<% if current_user %>
+			Welcome <%= current_user.name %>!
+			<%= link_to "Wyloguj", signout_path %>
+		<% else %>
+			<%= link_to "Zaloguj się za pomocą Twittera", "/auth/twitter"  %>
+		<% end %>
+	</div>
+	
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <div class="container nav-collapse">
+            <ul class="nav">
+			  <a class="brand" href="/">Strona główna</a>
+              <li><%= link_to "Filmweb", "http://www.filmweb.pl"  %></li>
+              <li><%= link_to "IMDb", "http://www.imdb.com"  %></li>
+              <li><%= link_to "Twiter", "http://www.twitter.com"  %></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+ 
+    <div class="container">
+        <div class="row">
+          <div class="span12">
+             <%= yield %> 	
+          </div>
+        </div><!--/row-->
+						
+      <footer>
+        <p>&reg; Siorski 2012</p>
+      </footer>
+    </div> <!-- /container -->
+
+    <!-- Javascripts
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <%= javascript_include_tag "application" %>
+
+  </body>
+</html>
+>>>>>>> heroku/master

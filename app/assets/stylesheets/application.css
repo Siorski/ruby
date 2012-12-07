@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
@@ -46,3 +47,41 @@ body {
 
 
 
+=======
+/*
+ * This is a manifest file that'll automatically include all the stylesheets available in this directory
+ * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
+ * the top of the compiled file, but it's generally better to create a new file per style scope.
+ *= require_self
+ *= require_tree .
+*/
+
+
+body {
+  background-color: #B7C0B5;
+  color: #333;
+  margin-top: 50px;
+}
+
+#user_nav {
+  width: 15%;
+  margin-left: 1130px;
+  font-size: 15px;
+  color: #2D2AC1;
+  padding: 20px 40px;
+  text-align: right;
+  background-color: #B52121;
+  -webkit-border-radius: 5px; /* Safari, Chrome */
+  -khtml-border-radius: 5px; /* Konqueror */
+  -moz-border-radius: 5px; /* Firefox */
+  border-radius: 10px;
+}
+
+#szukajka {
+  margin-top: -40px;
+  margin-bottom: 10px;
+  margin-left: 250px;
+  font-size: 14px;
+  color: #DC300A;
+}
+>>>>>>> heroku/master
