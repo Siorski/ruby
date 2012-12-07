@@ -7,4 +7,4 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-# Movie.create tytul: "Mroczny Rycerz", rezyser: "Christopher Nolan", gatunek: "Akcja, Sci-fi", dlugosc: 165 , ocena_filmweb: 8.0, ocena_imdb: 9.0, moja_ocena: 10
+
