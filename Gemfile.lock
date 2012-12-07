@@ -53,7 +53,12 @@ GEM
     excon (0.16.10)
     execjs (1.4.0)
       multi_json (~> 1.0)
+<<<<<<< HEAD
     ffi (1.2.0)
+=======
+    ffi (1.1.5)
+    ffi (1.1.5-x86-mingw32)
+>>>>>>> 628f1b730d0c55eb7b791ebc4c9dc3b757281c0b
     hashie (1.2.0)
     heroku (2.33.3)
       heroku-api (~> 0.3.7)
@@ -76,15 +81,25 @@ GEM
       jquery-rails
       railties (>= 3.1.0)
     json (1.7.5)
+<<<<<<< HEAD
     launchy (2.1.2)
       addressable (~> 2.3)
+=======
+    kaminari (0.14.1)
+      actionpack (>= 3.0.0)
+      activesupport (>= 3.0.0)
+>>>>>>> 628f1b730d0c55eb7b791ebc4c9dc3b757281c0b
     less (2.2.2)
       commonjs (~> 0.2.6)
     less-rails (2.2.6)
       actionpack (>= 3.1)
       less (~> 2.2.0)
     libv8 (3.3.10.4)
+<<<<<<< HEAD
     libwebsocket (0.1.7.1)
+=======
+    libwebsocket (0.1.5)
+>>>>>>> 628f1b730d0c55eb7b791ebc4c9dc3b757281c0b
       addressable
       websocket
     mail (2.4.4)
@@ -92,9 +107,15 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.19)
+<<<<<<< HEAD
     multi_json (1.4.0)
     netrc (0.7.7)
     nokogiri (1.5.5)
+=======
+    multi_json (1.3.6)
+    nokogiri (1.5.5)
+    nokogiri (1.5.5-x86-mingw32)
+>>>>>>> 628f1b730d0c55eb7b791ebc4c9dc3b757281c0b
     oauth (0.4.7)
     omniauth (1.1.1)
       hashie (~> 1.2)
@@ -106,6 +127,10 @@ GEM
       multi_json (~> 1.3)
       omniauth-oauth (~> 1.0)
     pg (0.14.1)
+<<<<<<< HEAD
+=======
+    pg (0.14.1-x86-mingw32)
+>>>>>>> 628f1b730d0c55eb7b791ebc4c9dc3b757281c0b
     polyglot (0.3.3)
     quiet_assets (1.0.1)
       railties (~> 3.1)
@@ -134,8 +159,11 @@ GEM
     rake (10.0.2)
     rdoc (3.12)
       json (~> 1.4)
+<<<<<<< HEAD
     rest-client (1.6.7)
       mime-types (>= 1.16)
+=======
+>>>>>>> 628f1b730d0c55eb7b791ebc4c9dc3b757281c0b
     rspec (2.11.0)
       rspec-core (~> 2.11.0)
       rspec-expectations (~> 2.11.0)
@@ -164,8 +192,18 @@ GEM
       rack (~> 1.0)
       tilt (~> 1.1, != 1.3.0)
     sqlite3 (1.3.6)
+<<<<<<< HEAD
     therubyracer (0.10.2)
       libv8 (~> 3.3.10)
+=======
+    sqlite3 (1.3.6-x86-mingw32)
+    therubyracer (0.10.2)
+      libv8 (~> 3.3.10)
+    thin (1.5.0)
+      daemons (>= 1.0.9)
+      eventmachine (>= 0.12.6)
+      rack (>= 1.0.0)
+>>>>>>> 628f1b730d0c55eb7b791ebc4c9dc3b757281c0b
     thor (0.16.0)
     tilt (1.3.3)
     treetop (1.4.12)
@@ -185,6 +223,10 @@ GEM
 
 PLATFORMS
   ruby
+<<<<<<< HEAD
+=======
+  x86-mingw32
+>>>>>>> 628f1b730d0c55eb7b791ebc4c9dc3b757281c0b
 
 DEPENDENCIES
   capybara (~> 1.1.2)
@@ -195,7 +237,11 @@ DEPENDENCIES
   jquery-rails (~> 2.1.3)
   jquery-ui-rails (~> 2.0.2)
   json (~> 1.7.5)
+<<<<<<< HEAD
   less-rails
+=======
+  kaminari
+>>>>>>> 628f1b730d0c55eb7b791ebc4c9dc3b757281c0b
   omniauth-twitter
   pg (~> 0.14.1)
   quiet_assets (~> 1.0.1)
