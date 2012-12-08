@@ -11,7 +11,7 @@ gem 'pg', '~> 0.14.1',      :groups => :production
 gem 'capybara', '~> 1.1.2', :groups => :test
 gem 'heroku'
 gem 'twitter-bootstrap-rails'
-#gem 'therubyracer'
+gem 'therubyracer'
 
 group :assets do
   gem 'less-rails'
