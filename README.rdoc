@@ -1,1 +1,5 @@
 Projekt aplikacji napisnej w ruby. 
+
+Logowanie przez Twittera.
+Wyszukiwanie po tytule.
+Heroku http://rubymovies.herokuapp.com/ 
