@@ -12,6 +12,7 @@ gem 'capybara', '~> 1.1.2', :groups => :test
 gem 'heroku'
 gem 'twitter-bootstrap-rails'
 gem 'therubyracer'
+gem 'libv8', '~> 3.11.8'
 
 group :assets do
   gem 'less-rails'
@@ -31,4 +32,3 @@ end
 
 gem 'omniauth-twitter'
 gem 'thin'
-gem 'kaminari'
