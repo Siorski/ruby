@@ -3,16 +3,13 @@ class Movie < ActiveRecord::Base
   
   
   validates :tytul, presence: true
-
-  validates :ocena_filmweb, numericality: { only_float: true }
-  validates :ocena_imdb, numericality: { only_float: true }
+  validates :dlugosc, :numericality => { :greater_than_or_equal_to => 0 }  
+  validates :ocena_filmweb, :numericality => { only_float: true, :greater_than_or_equal_to => 0  }
+  validates :ocena_imdb, :numericality => { only_float: true, :greater_than_or_equal_to => 0  }
 
 def self.search(tytul)
 if tytul.present?
-    # SQLite
   find(:all, :conditions => ['Tytul like ?', "%#{tytul}%"])
-    # PostgreSQL; i – ignore case
-  # where("quotation ilike :q or source ilike :q", q: "%#{query}%")
   else
     scoped
   end
