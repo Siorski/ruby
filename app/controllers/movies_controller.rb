@@ -5,7 +5,7 @@ class MoviesController < ApplicationController
    # @movies = Movie.all
 
   if params[:tytul]
-    @movies.downcase = Movie.search(params[:tytul].downcase)
+    @movies = Movie.search(params[:tytul])
   else
     @movies = Movie.all
   end
